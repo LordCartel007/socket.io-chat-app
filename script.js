@@ -10,7 +10,7 @@ const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
 const name = prompt("What is your name?");
 appendMessage("You joined");
-// sending new user that signed in to the server ||
+// sending new user that signed in to the server
 socket.emit("new-user", name);
 
 socket.on("chat-message", (data) => {
