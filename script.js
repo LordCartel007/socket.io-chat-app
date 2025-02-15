@@ -2,6 +2,7 @@
 
 // socket.on("chat-message", (data) => {
 //   socket.emit("chat-message", "Hello World");
+// sending the hello world through socket.io
 // });
 
 const socket = io("http://localhost:3000", { transports: ["websocket"] });
