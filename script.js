@@ -35,6 +35,7 @@ messageForm.addEventListener("submit", (e) => {
   messageInput.value = "";
 });
 
+// creating div element and appending message to the div element
 function appendMessage(message) {
   const messageElement = document.createElement("div");
   messageElement.innerText = message;
