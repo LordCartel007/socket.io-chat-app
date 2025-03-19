@@ -15,6 +15,7 @@ appendMessage("You joined");
 socket.emit("new-user", name);
 
 socket.on("chat-message", (data) => {
+  // consoling the data that is received from the server
   console.log("Received:", data);
   appendMessage(`${data.name}: ${data.message}`);
 });
