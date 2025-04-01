@@ -7,10 +7,12 @@
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="script.js"></script>
     <style>
+      /* body css */
       body {
         padding: 0;
         margin: 0;
         display: flex;
+
         justify-content: center;
       }
 
@@ -44,7 +46,9 @@
 
     <form id="send-container">
       <input type="text" id="message-input" />
-      <button type="submit" id="send-button">Send</button>
+      <button type="submit" aria-placeholder="click" id="send-button">
+        Send
+      </button>
     </form>
   </body>
 </html>
